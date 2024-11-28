@@ -10,7 +10,7 @@ contract logicV1 {
     function setValues(uint _no) public payable {
         addOn = _no;
         Address = msg.sender; // address of the interactor
-        Value = msg.value; // value will be non-zero for native "Ether" transaction only
+        Value = msg.value; // value will be zero for native "non Ether" transaction
     }
 }
 // proxy contract 
