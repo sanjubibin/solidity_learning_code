@@ -40,7 +40,7 @@ contract delegate1LogicV1 {
     }
 }
 
-// NOTE: when ever a proxy contract is in action --> storage slot no will be in action too meaning 
+// NOTE: when ever a proxy contract is in action --> storage slot number will be the only thing in action -- meaning 
 // -> there will be no difference between variable name's or types
 // -> only thing matter is storageSlots
 
