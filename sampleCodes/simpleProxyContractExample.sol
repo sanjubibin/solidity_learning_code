@@ -26,9 +26,8 @@ contract delegateLogicV1 {
             abi.encodeWithSignature("setValues(uint256)", _valueToAdd)
         );
 
-        // Check for errors and revert if necessary
+        // returns string msg indicating success or failure
         if (!success) {
-            // Handle the error, e.g., by reverting with the error data
             return "failed!!!";
         } else {
             return "success!!!";
