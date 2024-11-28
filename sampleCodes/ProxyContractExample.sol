@@ -18,6 +18,7 @@ contract Proxy {
      * @dev Updates the implementation address, allowing the proxy to be upgraded.
      * @param _newImplementation The address of the new implementation contract.
      */
+    // NOTE: don't forget to add admin privilage to this function, else any one can able to change the implementation contract
     function upgradeLogic(address _newImplementation) external{
         require(_newImplementation != address(0), "New implementation address cannot be zero");
         implementation = _newImplementation;
